@@ -2,31 +2,28 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Main</title>
+    <title>About</title>
     <meta name="viewport" content="width=device-width">
-    <link href="mainContent.css" rel="stylesheet" type="text/css"/>
+    <link href="aboutContent.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script> -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="mainScript.js" charset="utf-8"></script>
-    </head>
+    <script src="aboutScript.js" charset="utf-8"></script>
+  </head>
   <body>
     <header>
       <nav>
-      <p id="logo" target=”_blank”>BozheMoy</p>
+        <a href="main.html"><p id="logo">BozheMoy</p></a>
       <a id="Affiche" href="index.html"><p>Афиша</p></a>
       <a href="#" id="Shop" target=”_blank”><p>Магазин</p></a>
-      <a id="aboutUs" href="about.html"><p>О нас</p></a>
+      <a id="aboutUs"><p>О нас</p></a>
       <a href="#" id="Contacts" target=”_blank”><p>Контакты</p></a>
       </nav>
     </header>
-    <main id="help">
-      <div id="lines">
-        <img src="./images/klComp-e1_20.gif" alt="">
-      </div>
-        <div id="ex1" class="container">
-          <div id="ex1-layer" class="box"></div>
-        </div>
-    </main>
+    <section id="start">
+      <h1>Загробный<br>Фестиваль<br>«Боже Мой»</h1>
+      <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+      </video>
+    </section>
   </body>
 </html>
