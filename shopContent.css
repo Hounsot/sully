@@ -1,0 +1,103 @@
+@import "reset.css";
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+}
+header{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat( 10, 1fr);
+  grid-template-columns: repeat( 10, minmax(130px, 1fr));
+  grid-template-rows: 1fr;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+header p{
+  font-family: 'Suisse Intl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+  transition: color 0.2s;
+}
+header p:hover{
+  text-decoration-line: line-through;
+  color: #8E8E8E;
+  cursor: pointer;
+}
+#Affiche{
+  grid-column: 7;
+}
+#aboutUs{
+  color: white;
+}
+#logo{
+  font-size: 38px;
+  font-family: 'GT Sectra Display Trial';
+}
+#Shop{
+  color: white;
+  text-decoration: line-through;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100vw;
+  height: 100%;
+}
+.box{
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  height: 100%;
+  /* transition: all 1s; */
+}
+/* .box:hover{
+  transform-origin: top left;
+  transform: scale(2);
+}
+.box1:hover{
+  transform-origin: bottom left;
+  transform: scale(2)
+}
+.box2:hover{
+  transform-origin: bottom right;
+} */
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.white{
+  background-color: white;
+}
+.green{
+  background-color: yellow;
+}
+.purple{
+  background-color: purple;
+}
+.yellow{
+  background-color: green;
+}
+.cyan{
+  background-color: cyan;
+}

@@ -60,3 +60,11 @@ header p:hover{
   text-transform: uppercase;
   color: white;
 }
+#videoBG{
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 8px;
+  z-index: -10;
+}
