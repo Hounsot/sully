@@ -32,7 +32,7 @@ nav{
 }
 header p{
   font-family: 'Suisse Intl';
-  font-style: normal;
+  font-style: light;
   font-weight: 400;
   font-size: 32px;
   line-height: 37px;
@@ -43,6 +43,7 @@ header p:hover{
   text-decoration-line: line-through;
   color: #8E8E8E;
   cursor: pointer;
+  text-decoration-thickness: 10px;
 }
 #Affiche{
   grid-column: 7;

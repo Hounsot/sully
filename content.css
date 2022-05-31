@@ -5,7 +5,6 @@ body{
   overflow: hidden;
   background-color: black;
 }
-
 header{
   display: flex;
   /*grid-template-columns: repeat( 10, 1fr);
@@ -41,6 +40,7 @@ header p:hover{
   text-decoration-line: line-through;
   color: #8E8E8E;
   cursor: pointer;
+  text-decoration-thickness: 10px;
 }
 #Affiche{
   grid-column: 7;
@@ -55,9 +55,9 @@ header p:hover{
   width: 400px;
   height: 400px;
   bottom: -500px;
-  z-index: -10;
+  z-index: 2000;
 }
 .poster img{
-  z-index: -10;
+  z-index: 1200;
   transform: scale(1.5);
 }
