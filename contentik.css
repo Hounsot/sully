@@ -1,0 +1,128 @@
+@import "reset.css";
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+#overleap{
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+header{
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  /*grid-template-columns: repeat( 10, 1fr);
+  grid-template-rows: 1fr; */
+  width: 100%;
+  height: 60px;
+  /* background-color: black; */
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+}
+nav{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat( 10, 1fr);
+  grid-template-columns: repeat( 10, minmax(130px, 1fr));
+  grid-template-rows: 1fr;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+}
+header p{
+  font-family: 'Suisse Intl';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  color: #FFFFFF;
+  transition: color 0.2s;
+}
+header p:hover{
+  text-decoration-line: line-through;
+  color: #8E8E8E;
+  cursor: pointer;
+  text-decoration-thickness: 10px;
+}
+#Affiche{
+  grid-column: 7;
+  text-decoration: line-through;
+}
+#logo{
+  font-size: 38px;
+  font-family: 'GT Sectra Display Trial';
+}
+.wow{
+  /* background-image: linear-gradient(blue, yellow, red); */
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.wow.transition{
+  opacity: 0;
+}
+.wow1{
+  /* background-image: linear-gradient(blue, yellow, red); */
+  width: 100%;
+  height: 130vh;
+  opacity: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.wow1.transition{
+  opacity: 0;
+}
+.wow2{
+  /* background-image: linear-gradient(blue, yellow, red); */
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  transition: all 0.4s;
+}
+.wow2.transition{
+  opacity: 0;
+}
+.wow3{
+  /* background-image: linear-gradient(blue, yellow, red); */
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  transition: all 1s;
+}
+
+#lol{
+  position: sticky;
+  margin-left: 30px;
+  top: 50vh;
+  font-family: 'Suisse Intl';
+  font-size: 32px;
+  color: white;
+}
+#start{
+  grid-column: 1;
+  grid-row: 1;
+}

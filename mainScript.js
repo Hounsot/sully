@@ -6,7 +6,7 @@ $(document).ready(function(){
   let constrain = 20;
   let mouseOverContainer = document.getElementById("lines");
   let ex1Layer = document.getElementById("ex1-layer");
-  
+
   function transforms(x, y, el) {
     let box = el.getBoundingClientRect();
     let calcX = -(y - box.y - (box.height / 2)) / constrain;
@@ -26,5 +26,5 @@ $(document).ready(function(){
       transformElement(ex1Layer, position);
     });
   });
-  
+
 });
