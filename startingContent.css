@@ -1,4 +1,5 @@
-@import "reset.css";
+@import "global.css";
+/* подключаем хэдер, ресет и шрифты */
 body{
   display: grid;
   grid-template-rows: 1fr;
@@ -7,50 +8,6 @@ body{
   height: 100vh;
   overflow: hidden;
   background-color: black;
-}
-header{
-  grid-column: 1;
-  grid-row: 1;
-  display: flex;
-  /* grid-template-columns: repeat( 10, 1fr);
-  grid-template-rows: 1fr; */
-  width: 100%;
-  height: 60px;
-  background-color: black;
-  align-items: center;
-  justify-content: center;
-}
-nav{
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat( 10, 1fr);
-  grid-template-columns: repeat( 10, minmax(130px, 1fr));
-  grid-template-rows: 1fr;
-  height: 100%;
-  align-items: center;
-  justify-items: center;
-}
-header p{
-  font-family: 'Suisse Intl';
-  font-style: light;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
-  color: #FFFFFF;
-  transition: color 0.2s;
-}
-header p:hover{
-  text-decoration-line: line-through;
-  color: #8E8E8E;
-  cursor: pointer;
-  text-decoration-thickness: 10px;
-}
-#Affiche{
-  grid-column: 7;
-}
-#logo{
-  font-size: 38px;
-  font-family: 'GT Sectra Display Trial';
 }
 main{
   pointer-events: none;

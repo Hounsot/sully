@@ -2,34 +2,61 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>About</title>
     <meta name="viewport" content="width=device-width">
-    <link href="aboutContent.css" rel="stylesheet" type="text/css"/>
+    <title>Афиша</title>
+    <!-- подключаем css  -->
+    <link href="about.css" rel="stylesheet" type="text/css" />
+    <!-- подключаем из интернета -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- подключаем локально -->
     <!-- <script src="javascripts/jquery-3.6.0.js" charset="utf-8"></script> -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="aboutScript.js" charset="utf-8"></script>
+    <script src="test.js" charset="utf-8"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="main.html"><p id="logo">BozheMoy</p></a>
-      <a id="Affiche" href="index.html"><p>афиша</p></a>
-      <a href="shop.html" id="Shop" target=”_blank”><p>магазин</p></a>
-      <a id="aboutUs"><p>о нас</p></a>
-      <a href="contacts.html" id="Contacts" target=”_blank”><p>контакты</p></a>
+    <section id="overleap">
+      <header>
+        <nav>
+        <a href="starting.html"><p id="logo">BozheMoy</p></a>
+        <div id="navigation_buttons">
+          <a href="affiche.html"><p id="Affiche">афиша</p></a>
+          <a href="shop.html"><p href="shop.html" id="Shop">магазин</p></a>
+          <p>о нас</p>
+          <a href="contacts.html"><p id="Contacts">контакты</p></a>
+        </div>
       </nav>
-    </header>
-    <section id="start">
-      <video class="videoBG" width="100%" height="auto" autoplay="" loop="" muted="" playsinline="" style="margin-top: -26px;">
-        <source src="images/FinalVideo.mp4" type="video/mp4">
-      </video>
+      </header>
+      <section id="start">
+        <video class="videoBG" width="100%" height="auto" autoplay="" loop="" muted="" playsinline="">
+          <source src="images/FinalVideo.mp4" type="video/mp4">
+        </video>
+      </section>
     </section>
-    <div class="lamps">
+    <section class="wow">
+      <h3 id="lol">Пространство представляет<br>
+        из себя набор их трех полностью<br>
+        самостоятельных секций, через<br>
+        которые предстоит пройти грешной<br>
+        душе, чтобы искупить свой грех.</h3>
+    </section>
+    <section class="wow1">
+      <h3 id="lol">You can fly through<br>
+      edits in Adobe<br>
+      Lightroom and easily<br>
+      work with massive<br>
+      100-megapixel<br>
+      images.</h3>
+    </section>
+    <section class="wow2">
+      <h3 id="lol">That means Safari is<br>
+      faster than ever and<br>
+      you can browse with<br>
+      hundreds of tabs open<br>
+      at once.</h3>
+    </section>
+    <section class="wow3">
+    </section>
 
-    </div>
-    <section>
-      </div>
-    </section>
+
   </body>
 </html>

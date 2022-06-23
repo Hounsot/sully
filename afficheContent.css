@@ -1,0 +1,18 @@
+@import "global.css";
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+.poster{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  bottom: -500px;
+  z-index: 2000;
+}
+.poster img{
+  z-index: 1200;
+  transform: scale(1.5);
+}
