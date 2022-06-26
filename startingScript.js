@@ -1,22 +1,25 @@
 $(document).ready(function(){
+  var desktop = $(document).width();
+  if ( desktop >= 1440) {
+    
     $(document).mousemove(function(e) {
-      // var images = ['url("images/MainImages/MainImg0.png")', 'url("images/MainImages/MainImg1.png")','url("images/MainImages/MainImg2.png")', 'url("images/MainImages/MainImg3.png")', 'url("images/MainImages/MainImg4.png")', 'url("images/MainImages/MainImg5.jpg")', 'url("images/MainImages/MainImg6.png")', 'url("images/MainImages/MainImg7.png")', 'url("images/MainImages/MainImg8.png")', 'url("images/MainImages/MainImg9.png")', 'url("images/MainImages/MainImg10.jpg")',];
-      // $(".box").css('background-image', images[Math.floor(Math.random() * images.length)]);
-    });  
-  setInterval(function() {
-    var currentMousePosition = {x: - 1, y: -1}
-    $(document).mousemove(function(e) {
-      currentMousePosition.x = e.pageX;
-      currentMousePosition.y = e.pageY;
-      console.log(currentMousePosition.x);
-      if (currentMousePosition.x % 8 == 0 || currentMousePosition.y % 8 == 0)
-      { 
-        console.log('lalka')
       var images = ['url("images/MainImages/MainImg0.png")', 'url("images/MainImages/MainImg1.png")','url("images/MainImages/MainImg2.png")', 'url("images/MainImages/MainImg3.png")', 'url("images/MainImages/MainImg4.png")', 'url("images/MainImages/MainImg5.jpg")', 'url("images/MainImages/MainImg6.png")', 'url("images/MainImages/MainImg7.png")', 'url("images/MainImages/MainImg8.png")', 'url("images/MainImages/MainImg9.png")', 'url("images/MainImages/MainImg10.jpg")',];
       $(".box").css('background-image', images[Math.floor(Math.random() * images.length)]);
-    }
-    });
-  },1000);
+    });  
+  // setInterval(function() {
+  //   var currentMousePosition = {x: - 1, y: -1}
+  //   $(document).mousemove(function(e) {
+  //     currentMousePosition.x = e.pageX;
+  //     currentMousePosition.y = e.pageY;
+  //     console.log(currentMousePosition.x);
+  //     if (currentMousePosition.x % 8 == 0 || currentMousePosition.y % 8 == 0)
+  //     { 
+  //       console.log('lalka')
+  //     var images = ['url("images/MainImages/MainImg0.png")', 'url("images/MainImages/MainImg1.png")','url("images/MainImages/MainImg2.png")', 'url("images/MainImages/MainImg3.png")', 'url("images/MainImages/MainImg4.png")', 'url("images/MainImages/MainImg5.jpg")', 'url("images/MainImages/MainImg6.png")', 'url("images/MainImages/MainImg7.png")', 'url("images/MainImages/MainImg8.png")', 'url("images/MainImages/MainImg9.png")', 'url("images/MainImages/MainImg10.jpg")',];
+  //     $(".box").css('background-image', images[Math.floor(Math.random() * images.length)]);
+  //   }
+  //   });
+  // },1000);
   // смена картинок по движению мыши 
   let constrain = 20;
   let mouseOverContainer = document.getElementById("lines");
@@ -41,5 +44,5 @@ $(document).ready(function(){
       transformElement(ex1Layer, position);
     });
   });
-
+}
 });
